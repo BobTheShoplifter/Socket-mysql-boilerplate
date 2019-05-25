@@ -17,8 +17,8 @@ npm i
 
 ```
 module.exports = {
-	socketport: 8443, // Set the port of the socket server
-	socketip: '', // This can be blank but reccomended to set as the server ip
+socketport: 8443, // Set the port of the socket server
+socketip: '', // This can be blank but reccomended to set as the server ip
   mysql: {
    host: '', // Database ip
    user: '', // Database username
@@ -35,7 +35,7 @@ npm start main.js
 
 **Enable SSL** (Optional)
 
-Uncomment
+Uncomment the following code
 ```
 var options = {
     key: fs.readFileSync('ssl.key'),
@@ -59,6 +59,6 @@ You can optionaly download the [client](https://github.com/BobTheShoplifter/Sock
 
 ## Authors
 
-**[BobTheShoplifter](https://github.com/BobTheShoplifter)** - *Creator*
+**[BobTheShoplifter](https://github.com/BobTheShoplifter)**
 
 See also the list of [contributors](https://github.com/BobTheShoplifter/socket-mysql-boilerplate/contributors) who participated in this project.
