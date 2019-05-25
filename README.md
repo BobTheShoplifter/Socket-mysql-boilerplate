@@ -59,6 +59,6 @@ You can optionaly download the [client](https://github.com/BobTheShoplifter/Sock
 
 ## Authors
 
-* **Bob The Shoplifter* - *Creator*
+**[BobTheShoplifter](https://github.com/BobTheShoplifter)** - *Creator*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
