@@ -8,14 +8,29 @@ A step by step series of examples that tell you how to get the socket server run
 
 3 basic steps
 
+
+**Install dependencies**
 ```
-//Install dependencies
 npm i
+```
+**Edit your config.js**
 
-//Edit config.js with your information
+```
+module.exports = {
+	socketport: 8443,
+	socketip: '', //This can be blank but reccomended to set as the server ip
+  mysql: {
+   host: '', //Database ip
+   user: '', // Database username
+   pass: '', // Database password
+   database: '' // Database name
+  }
+}
+```
 
-//Start the socket server
-npm start
+**Start the socket server**
+```
+npm start main.js
 ```
 
 ## Authors
