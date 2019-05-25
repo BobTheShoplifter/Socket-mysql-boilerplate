@@ -21,6 +21,7 @@ database.getConnection(function(err, connection) {
     console.log(connection)
   });
 
+//Incase you want to enable ssl.
 /*var options = {
     key: fs.readFileSync('ssl.key'),
     cert: fs.readFileSync('ssl.crt'),
@@ -28,6 +29,8 @@ database.getConnection(function(err, connection) {
 };*/
 
 var app = express();
+//If https
+//server = var server = require('https').createServer(options, app);
 var server = require('http').createServer(app);
 var socket = require('socket.io').listen(server);
 server.listen(8443, '0.0.0.0');
