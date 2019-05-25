@@ -51,6 +51,11 @@ With
 ```server = var server = require('https').createServer(options, app);```
 
 And upload your new ssl.key + ssl.crt
+
+## Client
+
+You can optionaly download the [client](https://github.com/BobTheShoplifter/Socket-mysql-boilerplate-client) to test the socket server working.
+
 ## Authors
 
 * **Bob The Shoplifter* - *Creator*
