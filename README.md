@@ -61,4 +61,4 @@ You can optionaly download the [client](https://github.com/BobTheShoplifter/Sock
 
 **[BobTheShoplifter](https://github.com/BobTheShoplifter)** - *Creator*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/BobTheShoplifter/socket-mysql-boilerplate/contributors) who participated in this project.
