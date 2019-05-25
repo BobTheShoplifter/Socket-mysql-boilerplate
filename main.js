@@ -33,7 +33,7 @@ var app = express();
 //server = var server = require('https').createServer(options, app);
 var server = require('http').createServer(app);
 var socket = require('socket.io').listen(server);
-server.listen(8443, '0.0.0.0');
+server.listen(config.socketport, '0.0.0.0');
 
 console.log('Server up and running at %s port', config.socketport);
 
