@@ -1,6 +1,6 @@
 # Socket-mysql-boilerplate
 
-Easy boilerplate for socket.io
+Easy boilerplate for socket.io using express
 
 ### Installing
 
@@ -17,10 +17,10 @@ npm i
 
 ```
 module.exports = {
-	socketport: 8443,
-	socketip: '', //This can be blank but reccomended to set as the server ip
+	socketport: 8443, // Set the port of the socket server
+	socketip: '', // This can be blank but reccomended to set as the server ip
   mysql: {
-   host: '', //Database ip
+   host: '', // Database ip
    user: '', // Database username
    pass: '', // Database password
    database: '' // Database name
@@ -33,8 +33,25 @@ module.exports = {
 npm start main.js
 ```
 
+**Enable SSL** (Optional)
+Uncomment
+```
+var options = {
+    key: fs.readFileSync('ssl.key'),
+    cert: fs.readFileSync('ssl.crt'),
+    requestCert: false
+};
+```
+Replace
+
+```var server = require('http').createServer(app);```
+With
+
+```server = var server = require('https').createServer(options, app);```
+
+And upload your new ssl.key + ssl.crt
 ## Authors
 
-* **Bob The Shoplifter* - *Creato*
+* **Bob The Shoplifter* - *Creator*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
