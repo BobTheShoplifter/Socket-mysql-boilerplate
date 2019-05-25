@@ -17,8 +17,8 @@ var database = mysql.createPool({
 });
 
 database.getConnection(function(err, connection) {
-    if(err) console.log(err);
-    console.log(connection)
+    if(err) throw new Error(err);
+    if(connection) console.log("Connected to the database")
   });
 
 //Incase you want to enable ssl.

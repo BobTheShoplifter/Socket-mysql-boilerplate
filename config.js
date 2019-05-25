@@ -1,4 +1,4 @@
-var config = {
+module.exports = {
 	socketport: 8443,
 	socketip: '',
   mysql: {
@@ -8,4 +8,3 @@ var config = {
    	database: 'test'
   }
 }
-module.exports = config;
