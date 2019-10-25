@@ -39,6 +39,7 @@ console.log('Server up and running at %s port', config.socketport);
 
 socket.on('connection', function(socket){
     console.log('You gay or something');
+	console.log('you gay');
     database.query('SELECT `msg` FROM `message` WHERE id = 1', function(err, row) {
         if (err) {
             console.log(err);
